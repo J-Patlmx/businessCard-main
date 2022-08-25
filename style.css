@@ -12,13 +12,19 @@
 body {
   background-color: var(--colorRed);
 }
+h1 {
+  text-align: center;
+  color: var(--colorYellow);
+  text-shadow: 2px var(--colorDarkGold);
+  padding-top: 4rem;
+}
 .container {
   display: flex;
   text-align: center;
   justify-content: center;
   flex-direction: column;
   padding: 5rem;
-  padding-top: 12rem;
+  padding-top: 6rem;
 }
 #photoProfil {
   height: 5rem;
