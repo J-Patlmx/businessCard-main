@@ -1,6 +1,7 @@
 * {
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
 }
 :root {
   --colorRed: #aa0505;
@@ -23,12 +24,11 @@ h1 {
   text-align: center;
   justify-content: center;
   flex-direction: column;
-  padding: 5rem;
-  padding-top: 6rem;
+  padding: 4rem;
 }
 #photoProfil {
-  height: 5rem;
-  width: 5rem;
+  height: 6rem;
+  width: 6rem;
   border: 2px solid var(--colorYellow);
   border-radius: 50%;
   box-shadow: 4rem 4rem 4rem 4rem inset var(--colorDarkRed);
@@ -45,8 +45,8 @@ h4 {
   margin-top: 2rem;
 }
 .imgRS {
-  height: 3rem;
-  width: 3rem;
+  height: 4rem;
+  width: 4rem;
   border: 2px solid var(--colorYellow);
   border-radius: 1rem;
   /* background-color: var(--colorBlue); */
