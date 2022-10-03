@@ -30,7 +30,7 @@ body {
 }
 .fa-circle-notch {
   position: inherit;
-  color: var(--colorDarkGold);
+  color: var(--colorYellow);
 }
 @keyframes loader-iron {
   0% {
