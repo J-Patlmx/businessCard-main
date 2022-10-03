@@ -21,7 +21,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: loader-iron 0.9ms 3s alternate forwards;
+  animation: loader-iron 0.9ms 2s alternate forwards;
   transform-origin: top;
 }
 .fa-spinner {
