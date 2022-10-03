@@ -11,6 +11,35 @@
 body {
   background-color: var(--colorRed);
 }
+.loader {
+  position: fixed;
+  background-color: var(--colorDarkRed);
+  height: 100vh;
+  z-index: 1000;
+  inset: 0;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: loader-iron 0.9ms 3s alternate forwards;
+  transform-origin: top;
+}
+.fa-spinner {
+  position: inherit;
+  color: var(--colorBlue);
+}
+.fa-circle-notch {
+  position: inherit;
+  color: var(--colorDarkGold);
+}
+@keyframes loader-iron {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
 h1 {
   text-align: center;
   color: var(--colorYellow);
