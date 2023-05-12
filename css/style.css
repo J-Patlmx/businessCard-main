@@ -2,18 +2,18 @@
   box-sizing: border-box;
 }
 :root {
-  --colorRed: #aa0505;
-  --colorYellow: #fbca03;
-  --colorDarkRed: #6a0c0b;
+  --primary-color: rgb(222, 244, 189);
+  --secondary-color: rgb(240, 193, 107);
+  --greenSubstaction: rgb(114, 194, 105);
   --colorDarkGold: #b97d10;
-  --colorBlue: #67c7eb;
+  --tertiary-color: rgb(227, 172, 117);
 }
 body {
-  background-color: var(--colorRed);
+  background-color: var(--primary-color);
 }
 .loader {
   position: fixed;
-  background-color: var(--colorDarkRed);
+  background-color: var(--greenSubstaction);
   height: 100vh;
   z-index: 1000;
   inset: 0;
@@ -21,18 +21,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: loader-iron 0.9ms 2s alternate forwards;
+  animation: loader 0.9ms 2s alternate forwards;
   transform-origin: top;
 }
 .fa-spinner {
   position: inherit;
-  color: var(--colorBlue);
+  color: var(--tertiary-color);
 }
 .fa-circle-notch {
   position: inherit;
-  color: var(--colorYellow);
+  color: var(--secondary-color);
 }
-@keyframes loader-iron {
+@keyframes loader {
   0% {
     transform: scale(1);
   }
@@ -42,7 +42,7 @@ body {
 }
 h1 {
   text-align: center;
-  color: var(--colorYellow);
+  color: var(--secondary-color);
   text-shadow: 2px var(--colorDarkGold);
   padding-top: 64px;
 }
@@ -56,16 +56,16 @@ h1 {
 #photoProfil {
   height: 96px;
   width: 96px;
-  border: 2px solid var(--colorYellow);
+  border: 2px solid var(--secondary-color);
   border-radius: 50%;
-  box-shadow: 64px 64px 64px 64px inset var(--colorDarkRed);
+  box-shadow: 64px 64px 64px 64px inset var(--greenSubstaction);
   object-fit: cover;
 }
 h3 {
-  color: var(--colorBlue);
+  color: var(--tertiary-color);
 }
 h4 {
-  color: var(--colorBlue);
+  color: var(--tertiary-color);
 }
 .child {
   gap: 32px;
@@ -74,7 +74,7 @@ h4 {
 .imgRS {
   height: 64px;
   width: 64px;
-  border: 2px solid var(--colorYellow);
+  border: 2px solid var(--secondary-color);
   border-radius: 16px;
 }
 a {
@@ -82,17 +82,17 @@ a {
 }
 #footer {
   opacity: 0.7;
-  color: var(--colorDarkRed);
+  color: var(--greenSubstaction);
   text-align: center;
 }
 @media (min-width: 850px) {
   body {
-    background-color: var(--colorRed);
+    background-color: var(--primary-color);
   }
   #photoProfil {
     height: 256px;
     width: auto;
-    border: 6px solid var(--colorYellow);
+    border: 6px solid var(--secondary-color);
     margin-top: -4rem;
   }
   .container {
@@ -102,19 +102,23 @@ a {
     justify-content: space-between;
   }
   .child a :hover {
-    color: var(--colorYellow);
+    color: var(--secondary-color);
   }
   .imgRS {
     height: 128px;
     width: auto;
-    border: 4px solid var(--colorYellow);
+    border: 4px solid var(--secondary-color);
     border-radius: 32px;
   }
   h1 {
     font-size: 6rem;
     padding-top: 32px;
   }
-  #footer {
-    text-align: left;
+  #footer-p{
+    /* text-align: left; */
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: var(--greenSubstaction);
   }
 }
