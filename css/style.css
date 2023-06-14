@@ -89,6 +89,9 @@ a {
     color: var(--greenSubstaction);
   
 }
+
+
+
 @media (min-width: 850px) {
   body {
     background-color: var(--primary-color);
@@ -119,7 +122,7 @@ a {
     padding-top: 32px;
   }
   #footer-p{
-    /* text-align: left; */
+   
     display: flex;
     width: 100%;
     justify-content: center;
