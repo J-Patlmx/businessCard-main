@@ -5,7 +5,7 @@
   --primary-color: rgb(222, 244, 189);
   --secondary-color: rgb(240, 193, 107);
   --greenSubstaction: rgb(114, 194, 105);
-  --colorDarkGold: #b97d10;
+  --colorDarkGold: rgb(185, 125, 16);
   --tertiary-color: rgb(227, 172, 117);
 }
 body {
