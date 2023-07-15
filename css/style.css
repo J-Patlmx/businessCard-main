@@ -26,7 +26,7 @@ body {
 }
 .fa-spinner {
   position: inherit;
-  color: var(--tertiary-color);
+  color: var(--colorDarkGold);
 }
 .fa-circle-notch {
   position: inherit;
