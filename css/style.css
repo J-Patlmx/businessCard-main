@@ -7,6 +7,7 @@
   --greenSubstaction: rgb(114, 194, 105);
   --colorDarkGold: rgb(185, 125, 16);
   --tertiary-color: rgb(227, 172, 117);
+  --white-color: rgb(255, 255, 255);
 }
 body {
   background-color: var(--primary-color);
@@ -79,6 +80,7 @@ h4 {
   width: 64px;
   border: 2px solid var(--secondary-color);
   border-radius: 16px;
+  background-color: var(--white-color);
 }
 a {
   text-decoration: none;
