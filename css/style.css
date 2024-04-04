@@ -20,7 +20,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: loader 0.9ms 1.5s alternate forwards;
+  animation: loader 0.9ms 2s alternate forwards;
   transform-origin: top;
 }
 .fa-spinner {
@@ -83,7 +83,8 @@ h4 {
 a {
   text-decoration: none;
 }
-#footer-p {
+
+#footer-a {
   opacity: 0.7;
   display: flex;
     width: 100%;
