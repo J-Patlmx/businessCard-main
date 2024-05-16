@@ -6,9 +6,17 @@
   --secondary-color: #41805a;
   --greenSubstaction: rgb(114, 194, 105);
   --tertiary-color: olive;
+
+  --dark-primary-color: black;
+  --dark-secondary-color: #41805a;
+  --dark-greenSubstaction: rgb(114, 194, 105);
+  --dark-tertiary-color: olive;
 }
 body {
   background-color: var(--primary-color);
+}
+#aboutMe {
+  position: relative;
 }
 .loader {
   position: fixed;
@@ -134,4 +142,51 @@ a {
     justify-content: center;
     color: var(--secondary-color);
   }
+}
+
+@media (prefers-color-scheme: dark) {
+  .loader {
+    background-color:var(--dark-primary-color);
+  }
+  body{
+    background-color: var(--dark-primary-color);
+  }
+  #footer-a{
+    color: var(--dark-tertiary-color);
+  }
+}
+
+.bubble {
+  display: none;
+  position: absolute;
+  width: 250px;
+  bottom: 24px;
+  left: 5px;
+  transform: translate(55%, -100%);
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 10px;
+  max-width: 300px;
+  color: var(--secondary-color);
+
+}
+
+
+.bubble:before {
+  content: "";
+  position: absolute; 
+  top: 0;
+  left: -10px;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-bottom-color: #fff;
+ 
+
+
+}
+
+
+#photoProfil:hover + .bubble {
+  display: block;
 }
