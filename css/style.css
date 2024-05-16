@@ -190,3 +190,6 @@ a {
 #photoProfil:hover + .bubble {
   display: block;
 }
+#photoProfil:active + .bubble {
+  display: block;
+}
