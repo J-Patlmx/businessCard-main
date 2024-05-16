@@ -18,6 +18,9 @@ body {
 #aboutMe {
   position: relative;
 }
+ .bubble {
+  display: none;
+}
 .loader {
   position: fixed;
   background-color: var(--primary-color);
@@ -108,6 +111,34 @@ a {
   body {
     background-color: var(--primary-color);
   }
+  .bubble {
+    display: none;
+    position: absolute;
+    width: 250px;
+    bottom: 24px;
+    left: 5px;
+    transform: translate(55%, -100%);
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 10px;
+    max-width: 300px;
+    color: var(--secondary-color);
+  
+  }
+  
+  .bubble:before {
+    content: "";
+    position: absolute; 
+    top: 0;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-bottom-color: #fff;
+   
+  
+  
+  }
   #photoProfil {
     height: 256px;
     width: auto;
@@ -156,42 +187,9 @@ a {
   }
 }
 
-.bubble {
-  display: none;
-  position: absolute;
-  width: 250px;
-  bottom: 24px;
-  left: 5px;
-  transform: translate(55%, -100%);
-  background-color: #fff;
-  border-radius: 15px;
-  padding: 10px;
-  max-width: 300px;
-  color: var(--secondary-color);
 
-}
-
-
-.bubble:before {
-  content: "";
-  position: absolute; 
-  top: 0;
-  left: -10px;
-  width: 0;
-  height: 0;
-  border: 20px solid transparent;
-  border-bottom-color: #fff;
- 
-
-
-}
 
 
 #photoProfil:hover + .bubble {
   display: block;
-}
-@media only screen and (max-width: 768px) {
-  .bubble {
-    display: none;
-  }
 }
