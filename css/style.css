@@ -17,6 +17,7 @@ body {
 }
 .youNeed{
   text-align: center;
+  color: var(--tertiary-color);
   }
 #aboutMe {
   position: relative;
