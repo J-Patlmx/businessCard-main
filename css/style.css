@@ -15,11 +15,18 @@
 body {
   background-color: var(--primary-color);
 }
+.youNeed{
+  color: #41805a;
+
+}
 #aboutMe {
   position: relative;
 }
  .bubble {
   display: none;
+}
+.bubble-P {
+ display: none;
 }
 .loader {
   position: fixed;
@@ -111,6 +118,12 @@ a {
   body {
     background-color: var(--primary-color);
   }
+  .youNeed{
+    display: none;
+  }
+  .bubble-P {
+    display:block;
+   }
   .bubble {
     display: none;
     position: absolute;
