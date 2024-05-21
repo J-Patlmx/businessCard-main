@@ -16,9 +16,8 @@ body {
   background-color: var(--primary-color);
 }
 .youNeed{
-  color: #41805a;
-
-}
+  text-align: center;
+  }
 #aboutMe {
   position: relative;
 }
@@ -118,9 +117,7 @@ a {
   body {
     background-color: var(--primary-color);
   }
-  .youNeed{
-    display: none;
-  }
+ 
   .bubble-P {
     display:block;
    }
