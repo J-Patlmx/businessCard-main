@@ -5,7 +5,7 @@
   --primary-color: white;
   --secondary-color: #41805a;
   --greenSubstaction: rgb(114, 194, 105);
-  --tertiary-color: olive;
+  --tertiary-color: #808000;
 
   --dark-primary-color: black;
   --dark-secondary-color: #41805a;
@@ -17,7 +17,7 @@ body {
 }
 .youNeed{
   text-align: center;
-  color: var(--tertiary-color);
+  color: var(--secondary-color);
   }
 #aboutMe {
   position: relative;
